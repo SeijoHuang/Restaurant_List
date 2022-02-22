@@ -34,9 +34,10 @@ app.listen(port, () => {
 
 function renderSearchResult(req, res) {
   const keyword = req.query.keyword.replace(/ /g, '')
-  const searchListByName = restaurants.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase()))
-  const searchListByCategory = restaurants.filter(restaurant => restaurant.category.toLowerCase().includes(keyword.toLowerCase()))
-  const searchList = searchListByName.length ? searchListByName : searchListByCategory
+  // const searchListByName = restaurants.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase()))
+  // const searchListByCategory = restaurants.filter(restaurant => restaurant.category.toLowerCase().includes(keyword.toLowerCase()))
+  // const searchList = searchListByName.length ? searchListByName : searchListByCategory
+  const searchList = restaurants.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase()) || restaurant.category.toLowerCase().includes(keyword.toLowerCase()))
   //若搜尋不到餐廳帶入no-found頁面
   if (searchList.length === 0) {
     res.render('no-found', ({ keyword }))
