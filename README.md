@@ -1,8 +1,4 @@
 # 餐廳清單
-<<<<<<< HEAD
-![“餐廳清單”](/AC作業/restaurant_List.png "餐廳清單")
-=======
->>>>>>> 25d7e15da646da080094741dc526383badd08e43
 ## Features-產品功能
 1.使用者可依照餐廳名或餐廳類別搜尋
 2.點入餐廳頁面可檢視餐廳的詳細資訊：餐廳名、類別、電話、地址、Google Map簡介
@@ -26,9 +22,4 @@ npm install
 ```
 npm run dev
 ```
-<<<<<<< HEAD
 5.看見”listening on localhost:3000“代表順利執行，即可網址：http://localhost:3000
-
-=======
-5.看見”listening on localhost:3000“代表順利執行，即可連結至網址：http://localhost:3000
->>>>>>> 25d7e15da646da080094741dc526383badd08e43
