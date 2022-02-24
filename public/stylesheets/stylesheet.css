@@ -49,19 +49,12 @@ header {
   box-shadow: none;
   border-color: #ced4da;
 }
-.card-columns{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-}
+
 .card {
-  margin: 10px 10px; 
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card img{
-
   height: 180px;
 }
 
@@ -84,41 +77,24 @@ header {
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.rating span{
-  /* width: 50px; */
-  text-align: center;
-  color:white;
-  background-color:#DC3545;
-}
 .card-title:hover{
- text-shadow: 1px 1px 8px rgb(214, 209, 209);
- font-size: 20px;
+  font-size: 1.2em;
 }
 
 .no-found h1{
+  margin: 2em;
   text-align: center;
-  margin-top: 60px;
-  color:#666666;
+  color: rgb(77, 75, 75);
 }
+
+
 
 @media screen and (max-width: 992px) {
   
   .card img{
     height: 115px;
   }
-  .card{
-    width:180px;
-  }
 }
-@media screen and (max-width: 1500px){
-  .card img{
-    height: 180px;
-  }
-  .card{
-    width:250px;
-  }
-}
-
 
 @media screen and (max-width: 768px) {
   
