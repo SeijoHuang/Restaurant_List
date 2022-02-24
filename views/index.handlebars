@@ -21,7 +21,6 @@
   <div class="row">
     <div class="col-md-10 col-12 mx-auto">
       <div class="card-columns">
-
         {{#each restaurants}}
 
         <a href="/restaurants/{{this.id}}" class="text-secondary">
@@ -30,8 +29,8 @@
             <div class="card-body p-3">
               <h6 class="card-title mb-1">{{this.name}}</h6>
 
-              <div class="restaurant-category mb-1">
-                <i class="fas fa-utensils pr-2"></i> {{this.category}}
+              <div class="restaurant-category mb-1" onclick="leadToCategoryPage()">
+                <i class="fas fa-utensils pr-2"></i> {{this.category}}                
               </div>
               <span class="badge badge-pill badge-danger font-weight-normal">
                 {{this.rating}}
@@ -40,10 +39,15 @@
             </div>
           </div>
         </a>
-
         {{/each}}
 
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  function leadToCategoryPage() {
+    location.href = '/category/{{this.category}}'
+  }
+</script>
