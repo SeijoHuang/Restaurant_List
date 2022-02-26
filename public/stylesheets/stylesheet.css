@@ -77,14 +77,14 @@ header {
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.card-title:hover{
-  font-size: 1.2em;
-}
 
 .no-found h1{
   margin: 2em;
   text-align: center;
   color: rgb(77, 75, 75);
+}
+.category {
+  cursor: pointer;
 }
 
 
