@@ -19,29 +19,32 @@
 <!-- restaurant list -->
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-10 col-12 mx-auto">
-      <div class="card-columns">
-        {{#each restaurants}}
-        <a href="/restaurants/{{this.id}}" class="text-secondary">
+    {{#each restaurants}}
+      <div class="col-12 col-sm-6 col-md-4  mx-auto">
           <div class="card mb-3">
-            <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
-            <div class="card-body p-3">
-              <h6 class="card-title mb-1">{{this.name}}</h6>
-              <a href="/category/{{this.category}}">
-                <div class="restaurant-category mb-1">
-                  <i class="fas fa-utensils pr-2"></i> {{this.category}}
+             <a href="/restaurants/{{this.id}}" class="text-secondary">
+                <div>
+                  <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
                 </div>
-              </a>
-              <span class="badge badge-pill badge-danger font-weight-normal">
-                {{this.rating}}
-                <i class="fas fa-star fa-xs"></i>
-              </span>
-            </div>
+             </a>
+             <div class="card-body p-3">
+                <a href="/restaurants/{{this.id}}" class="text-secondary">
+                  <div>
+                      <h6 class="card-title mb-1">{{this.name}}</h6>
+                  </div>
+                </a>
+                <a href="/category/{{this.category}}">
+                  <div class="restaurant-category mb-1">
+                    <i class="fas fa-utensils pr-2"></i> {{this.category}}
+                  </div>
+                </a>
+                  <span class="badge badge-pill badge-danger font-weight-normal">
+                      {{this.rating}}
+                     <i class="fas fa-star fa-xs"></i>
+                  </span>
+             </div>
           </div>
-        </a>
-        {{/each}}
-
-      </div>
-    </div>
+      </div> 
+    {{/each}}
   </div>
 </div>
